@@ -1,7 +1,5 @@
 <?php
-"/Applications/XAMPP/xamppfiles/htdocs/index.php"
-
-// Default XAMPP template
+$theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
 ?>
 
 <!DOCTYPE html>
@@ -10,22 +8,24 @@
     <title>Ramen2Go - Food Delivery</title>
     <link rel="stylesheet" href="/XAMPP/xamppfiles/htdocs/assets/css/main.css">
     <script src="/XAMPP/xamppfiles/htdocs/assets/js/main.js"></script>
-    <?php include 'index.html'; ?> // Include the contents of index.html
+    <?php include 'index.html'; ?> 
 
+    <style>
+        <?php if ($theme === 'dark'): ?>
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+        <?php endif; ?>
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Welcome to Ramen2Go</h1>
+            <?php include 'header.php';?>
+            <label for="theme-switch">Dark Mode</label>
+            <input type="checkbox" id="theme-switch" <?php echo $theme === 'dark' ? 'checked' : ''; ?>>
         </header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/menu.php">Menu</a></li>
-                <li><a href="/about.php">About</a></li>
-                <li><a href="/contact.php">Contact</a></li>
-            </ul>
-        </nav>
         <main>
             <h2>Delicious Ramen Delivered to Your Doorstep</h2>
             <p>Order your favorite ramen dishes online and have them delivered to your home or office.</p>
@@ -33,8 +33,16 @@
             <a href="/menu.php" class="btn">Order Now</a>
         </main>
         <footer>
-            <p>&copy; <?php echo date("Y"); ?> Ramen2Go. All rights reserved.</p>
+            <?php include 'footer.php'; ?>
         </footer>
     </div>
+
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        themeSwitch.addEventListener('change', function() {
+            document.cookie = `theme=${this.checked ? 'dark' : 'light'}; path=/`;
+            location.reload();
+        });
+    </script>
 </body>
 </html>
