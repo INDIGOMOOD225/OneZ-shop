@@ -61,62 +61,73 @@
   </div>
 <div class="journal">
 <!-- bootstrap form ale zrecikloval som elementy z journal class -->
+<h2>Subscribe to our Newsletter</h2>
 
-  <form>
-    <br>
-    <br><br>
-    <br>
-    <h1>Fill out the form and become the Rogue</h1>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-      </div>
+<p>Sign up to receive updates on our latest FAQs and news.</p>
+<?php
+include 'subscriptionForm.php';
+?>
+<form action="subscriptionForm.php" method="post">
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+<form action="subscriptionForm.php" method="post">
+  <br>
+  <br><br>
+  <br>
+  <h1>Fill out the form and become the Rogue</h1>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
     </div>
-    <div class="form-group">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Štúrova 22">
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
-    <div class="form-group">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Studio, RD, flat">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Štúrova 22">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Studio, RD, flat">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
     </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select id="inputState" class="form-control">
-          <option selected></option>
-            <option>Austria</option>
-          <option>Slovakia</option>
-          <option>Czech Republic</option>
-        <option>Poland</option>
-          <option>Hungary</option>
-          <option>Isle of man</option>
-        </select>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Postal</label>
-        <input type="text" class="form-control" id="inputZip" placeholder="949 01">
-      </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected></option>
+          <option>Austria</option>
+        <option>Slovakia</option>
+        <option>Czech Republic</option>
+      <option>Poland</option>
+        <option>Hungary</option>
+        <option>Isle of man</option>
+      </select>
     </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Not a robot
-        </label>
-      </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Postal</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="949 01">
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Not a robot
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
 <br>
 <br><br><br><br><br>
 
