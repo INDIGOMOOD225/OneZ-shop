@@ -24,7 +24,7 @@ include "parts/footer.php";
             <span class="author">Teo Burcl </span>creator and founder of this site. Huge fan of <em>Old school Rogue-likes</em>. This site is tribute to allmighty games of the same genre <em>praise the permadeath concept</em>
           </p>
           <p>
-            All rights reserved <strong>© 2021</strong> <br> <br><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Last Warning!!!">
+            All rights reserved <strong>© 2024</strong> <br> <br><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Last Warning!!!">
       Do not touch!</button><br>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try this instead!</a>
           </p>
