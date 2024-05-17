@@ -1,0 +1,18 @@
+<?php
+"./htdocs/index.php"
+
+// Default XAMPP template
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rogue´s Lair</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <?php include 'index.html'; ?> // Include the contents of index.html
+
+</head>
+<body>
+    
+</body>
+</html>
