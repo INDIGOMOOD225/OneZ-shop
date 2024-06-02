@@ -23,6 +23,8 @@ h2{
 table{
 	width:  1000px;
 	margin: 50px auto;	
+	fill: #ccf4d6;
+	background-color: #ffecef;
 }
 
 table th{
@@ -31,6 +33,7 @@ table th{
 }
 
 table td{
+	background-color: #ccf4d6;
 	padding: 10px;
 	border:  thin solid #d4d4d4;
 	width: 18%;

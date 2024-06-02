@@ -3,6 +3,7 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,17 @@
     <label for="password">Password:</label>
     <input type="password" placeholder="Enter password..." id="password" />
 
-    <input type="submit" value="Login" />
+    <input onclick = "mySubmit(this)" type="submit" value="Login" />
   </form>
 
-  <script>
+  <script>// store the IDs of all logged in users in here
 var loggedusers = [];
 
-
+// server should handle everything below...
+// users array, which contains all users in the system
+// on the server-side this could be an array returned by a MySQL database table, for example
 var users = [{
-
+  // ID of the user
   id: 1,
   // username of the user
   username: 'user1',

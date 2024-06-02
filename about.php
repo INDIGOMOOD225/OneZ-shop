@@ -1,6 +1,7 @@
 <?php
-"./htdocs/index.php";
-
+"./htdocs/about.php";
+include "parts/header.php";
+include "parts/footer.php";
 
 
 ?>
@@ -10,8 +11,8 @@
 <head>
     <title>Rogue´s Lair</title>
     <link rel="stylesheet" href="css/main.css">
-    <?php include 'index.html'; ?> // Include the contents of index.html
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+    <?php include 'about.html'; ?> // Include the contents of index.html
+
 </head>
 <body>
     <?php include 'header.php';?>
