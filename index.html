@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
 <style>
 /* internal css */
     a { text-decoration: none; }
@@ -33,6 +34,7 @@
 
 </head>
 <body>
+  <?php include 'header.php';?>
   <!-- Header {navbar,class, inline css}-->
   <nav class="header">
     <span class="logo"><a href="index.html" style="text-decoration:none";>ROGUE'S L@IR</a></span>
@@ -40,6 +42,7 @@
       <li><a href="about.html">@bout</a></li>
       <li><a href="visitors.html">Visitors</a></li>
   <li><a href="faq.html">Subscribe</a></li>
+      <li><a href="login.php">Logout</a></li>
     </ul>
 
   </nav>
@@ -122,7 +125,7 @@ The Rogue-like concept can be found in different genres and can serve similar pu
 </div>
   </div>
 
-
+  
   <!-- Footer bootstrap a responzivny obrazok, ktorý stále neviem vycentrovať -->
   <div class="container-fluid">
     <footer>

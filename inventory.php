@@ -11,6 +11,22 @@
 	<link rel="stylesheet" href="css/table.css"> 
 	<title>Start up</title>
     <style>
+      header{
+        background-color: #f1f1f1;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      h2{
+        text-align: center;
+        color: "white";
+        background-color: aquamarine;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        fill: whitesmoke;
+      }
     body{
         background-image: url(https://freefrontend.com/assets/img/css-background-patterns/2023-3d-cropped-golden-cubes-tessellated-pattern-no-div-pure-css.png);
         background-repeat: no-repeat;

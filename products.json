@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"image": "product-images/bike-1.jpeg",
-		"name": "Orient Vita Pro 28\"",
+		"name": "PS3 controller\"",
 		"price": "284",
 		"inventory": 4,
 		"productCode": "K203"
@@ -10,7 +10,7 @@
 	{
 		"id": 2,
 		"image": "product-images/bike-2.jpeg",
-		"name": "Orient S-400 26\"",
+		"name": "XBOX 360 controller\"",
 		"price": "198",
 		"inventory": 14,
 		"productCode": "K433"
@@ -18,7 +18,7 @@
 	{
 		"id": 3,
 		"image": "product-images/bike-3.jpeg",
-		"name": "Bullet Bora 20\"",
+		"name": "WII-U last batch\"",
 		"price": "350",
 		"inventory": 7,
 		"productCode": "K012"
@@ -26,7 +26,7 @@
 	{
 		"id": 4,
 		"image": "product-images/guitar-1.png",
-		"name": "Feder handmade",
+		"name": "custom skin gamepad",
 		"price": "790",
 		"inventory": 5,
 		"productCode": "G0127"
@@ -34,7 +34,7 @@
 	{
 		"id": 5,
 		"image": "product-images/guitar-2.png",
-		"name": "Ibanez G120",
+		"name": "war torn gamepad",
 		"price": "430",
 		"inventory": 2,
 		"productCode": "G1233"
@@ -42,7 +42,7 @@
 	{
 		"id": 6,
 		"image": "product-images/guitar-3.png",
-		"name": "Feder Blues edition",
+		"name": "Samsung Mišung",
 		"price": "650",
 		"inventory": 6,
 		"productCode": "G4478"
